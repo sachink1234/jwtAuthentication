@@ -1,8 +1,7 @@
 package com.jwt.example.JwtExample3.controller;
 
-
-import com.jwt.example.JwtExample3.model.JwtRequest;
-import com.jwt.example.JwtExample3.model.JwtResponse;
+import com.jwt.example.JwtExample3.models.JwtRequest;
+import com.jwt.example.JwtExample3.models.JwtResponse;
 import com.jwt.example.JwtExample3.security.JwtHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,10 +15,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
+
     @Autowired
     private UserDetailsService userDetailsService;
 
